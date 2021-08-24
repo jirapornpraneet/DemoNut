@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xg2-3t-TUd">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root App Controller-->
+        <scene sceneID="7OT-u5-mvG">
+            <objects>
+                <viewController storyboardIdentifier="RootAppController" id="xg2-3t-TUd" customClass="RootAppController" customModule="Platform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ynq-Hf-pgV">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IO2-Uc-j15"/>
+                    </view>
+                    <size key="freeformSize" width="200" height="200"/>
+                    <connections>
+                        <segue destination="Xe2-Fo-h2m" kind="custom" identifier="left" customClass="LGSideMenuSegue" id="twh-92-MyW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xoW-zF-Yv6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-670" y="-144"/>
+        </scene>
+        <!--Drawer View Controller-->
+        <scene sceneID="BhQ-I7-ydo">
+            <objects>
+                <viewController storyboardIdentifier="DrawerViewController" id="Xe2-Fo-h2m" customClass="DrawerViewController" customModule="Platform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vEt-4U-tSO">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wvG-dh-uPQ">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="Uhv-c0-LcH">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="vTc-ob-ekx">
+                                        <rect key="frame" x="0.0" y="108" width="250" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vTc-ob-ekx" id="hzZ-Tt-QYG">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wvG-dh-uPQ" secondAttribute="trailing" id="9Rz-TY-RvX"/>
+                            <constraint firstItem="wvG-dh-uPQ" firstAttribute="top" secondItem="vEt-4U-tSO" secondAttribute="top" id="EPT-Ni-9uX"/>
+                            <constraint firstAttribute="bottom" secondItem="wvG-dh-uPQ" secondAttribute="bottom" id="jtP-yh-pAP"/>
+                            <constraint firstItem="wvG-dh-uPQ" firstAttribute="leading" secondItem="nzQ-wz-JU6" secondAttribute="leading" id="nZv-NV-2Ns"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nzQ-wz-JU6"/>
+                    </view>
+                    <size key="freeformSize" width="250" height="736"/>
+                    <connections>
+                        <outlet property="tableView" destination="wvG-dh-uPQ" id="KpO-UB-I2C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FeB-eU-u3z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-174" y="-144"/>
+        </scene>
+    </scenes>
+</document>
