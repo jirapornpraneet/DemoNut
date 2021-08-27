@@ -35,9 +35,9 @@ enum Environment {
     /// custom configuration host
     
     static var env_host: [Environment: String] { return [
-        .Develop:       "http://27.254.94.169:12012/api/v1/",
-        .Staging:       "http://27.254.94.169:12012/api/v1/",
-        .Production:    "http://27.254.94.169:12012/api/v1/"
+        .Develop:       "https://api.soc.piesoft.net",
+        .Staging:       "https://api.soc.piesoft.net",
+        .Production:    "https://api.soc.piesoft.net"
     ]}
 }
 

@@ -18,14 +18,17 @@ public struct DataError {
     
     /// Error action if needed
     
-    func verify() {
-        AppDirector.sharedInstance.error(self)
+    func verify(_ title: String? = nil) {
+        print("error ja \(String(describing: self.message))")
     }
 }
 
 extension DataResponse {
     
     func handlerError(_ completion: @escaping (Success?, DataError?)->()) {
+        #if DEBUG
+        print("==> \(self.error == nil ? "Success" : "Error \(self.response?.status.code ?? 200)") | URL: \(self.request?.urlRequest?.url?.absoluteString ?? "")")
+        #endif
         
         // Error Case
         if let error = self.error, let response = self.response {
@@ -33,26 +36,32 @@ extension DataResponse {
             // Default
             let _error = DataError(message: error.localizedDescription, status: response.status)
             
-           // Can't map data JSON because 'key path' is incorrect
-           if let res = self.response, res.status.responseType == .success {
-            
-               completion(nil, _error)
-            
-           } else { // Try Mapping error JSON message
-               
-               do {
-                    let dict = try JSONSerialization.dictionary(data: self.data!, options: [])
-                    let err = DataError(message: (dict["message"] as? String) ?? _error.message, status: _error.status)
-                    completion(nil, err)
-                   
-               } catch _ {
-                   completion(nil, _error)
-               }
-           }
+            // Can't map data JSON because 'key path' is incorrect
+            if let res = self.response, res.status.responseType == .success {
+                
+                //completion(nil, _error)
+                completion([] as? Success, nil)
+                
+            } else { // Try Mapping error JSON message
+
+                
+                if let data = self.data {
+                    do {
+                        let dict = try JSONSerialization.dictionary(data: data, options: [])
+                        let err = DataError(message: (dict["message"] as? String) ?? _error.message, status: _error.status)
+                        completion(nil, err)
+                    } catch _ {
+                        completion(nil, _error)
+                    }
+                } else {
+                    completion(nil, _error)
+                }
+            }
         } else {
             completion(self.value, nil)
         }
     }
 }
+
 
 

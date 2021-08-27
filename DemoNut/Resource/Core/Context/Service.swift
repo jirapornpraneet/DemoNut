@@ -15,6 +15,6 @@ struct Service {
     var user: UserService!
     
     init() {
-        self.user = UserService(.User)
+        self.user = UserService(Environment.current.host)
     }
 }

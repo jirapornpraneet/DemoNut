@@ -21,13 +21,21 @@ class HomeViewController : BaseViewController {
     func updateInterface() {
         // Code here to update your interface
     }
+    
+    @IBAction func loginAction() {
+        fetchData()
+    }
+    
 }
+
 
 extension HomeViewController {
     
     func fetchData() {
-        viewModel.requestData {
-            // On fetch success
+        viewModel.requestData { isSuccess in
+            if isSuccess {
+                print("success")
+            }
         }
     }
 }

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +10,7 @@
         <!--Home View Controller-->
         <scene sceneID="N5B-F3-77A">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="rOC-Ts-wAy" customClass="HomeViewController" customModule="Platform" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="rOC-Ts-wAy" customClass="HomeViewController" customModule="DemoNut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SiS-Kp-roU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,14 +111,30 @@
                                     <constraint firstItem="Ey7-OC-5SQ" firstAttribute="top" secondItem="Xgv-fs-lNi" secondAttribute="top" id="zDK-KE-rlc"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoU-81-hA0">
+                                <rect key="frame" x="188" y="353" width="38" height="30"/>
+                                <color key="backgroundColor" red="0.37254901959999998" green="0.46274509800000002" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FL6-Fk-xFe"/>
+                                    <constraint firstAttribute="width" constant="38" id="Lrv-9x-UBy"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction" destination="rOC-Ts-wAy" eventType="touchUpInside" id="P2U-3O-JTb"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="pla-gQ-Bhv"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="qoU-81-hA0" firstAttribute="centerX" secondItem="SiS-Kp-roU" secondAttribute="centerX" id="PG6-qI-E2o"/>
                             <constraint firstItem="Xgv-fs-lNi" firstAttribute="top" secondItem="SiS-Kp-roU" secondAttribute="top" id="S7s-Fr-xko"/>
+                            <constraint firstItem="qoU-81-hA0" firstAttribute="centerY" secondItem="SiS-Kp-roU" secondAttribute="centerY" id="eK1-eW-e2Q"/>
                             <constraint firstItem="Xgv-fs-lNi" firstAttribute="leading" secondItem="SiS-Kp-roU" secondAttribute="leading" id="gpf-RQ-gJf"/>
                             <constraint firstAttribute="trailing" secondItem="Xgv-fs-lNi" secondAttribute="trailing" id="t21-Xu-qwe"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pla-gQ-Bhv"/>
                     </view>
                     <connections>
                         <outlet property="navigationLabel" destination="FKS-jg-PCI" id="HwZ-b6-trW"/>

@@ -27,12 +27,15 @@ class UserService: BaseService {
     /// Login
     
     func requestForLogin() -> AppRequest<UserInfo>?  {
-        path = "login/email"
+        path = "/Mobile/GetConfig"
         
-        // Parameter
-        let param = ["foo": "bar"]
+        let param = [
+            "fcm_token" : "token3",
+            "deviceId" : "device1",
+            "platform" : 0, // 0 = android, 1 = ios
+            "os" : "0.1.1"
+        ] as Parameters
         
-        // return 'Request' for each service
-        return AppRequest<UserInfo>(self.url, keyPath: "data", method: .get, parameters: param, encoding: JSONEncoding.default, headers: headers)
+        return AppRequest<UserInfo>(self.url, keyPath: "data", method: .post, parameters: param, encoding: JSONEncoding.default, headers: headers)
     }
 }

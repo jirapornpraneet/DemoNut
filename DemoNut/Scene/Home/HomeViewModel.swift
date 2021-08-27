@@ -10,6 +10,9 @@
 import UIKit
 
 class HomeViewModel {
+    
+    var request: AppRequest<UserInfo>?
+    var datasource = UserInfo()
         
     struct Sender {
         var id: Int
@@ -24,9 +27,20 @@ class HomeViewModel {
 extension HomeViewModel {
     
     // Code here to call data
-    func requestData(_ completion: (() -> ())? = nil) {
-        
-        // callback
-        completion?()
+    func requestData(_ completion: ((_ success: Bool) -> ())? = nil) {
+    
+        request = AppGlobal.sharedInstance.service.user.requestForLogin()
+        request?.completionObject({ (response: ResponseObject<UserInfo>) in
+            guard response.isVerified else { completion?(false)
+                return
+            }
+
+            if let value = response.value {
+                self.datasource = value
+                completion?(true)
+            }
+            self.request = nil
+        })
+        request?.start()
     }
 }
