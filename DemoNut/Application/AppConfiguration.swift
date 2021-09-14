@@ -14,7 +14,6 @@ class AppConfiguration {
     // MARK: - Structure
     
     struct Image {
-        let background: UIImage
         let ic_tabbar_home: UIImage
     }
     
@@ -37,7 +36,6 @@ extension AppConfiguration {
     // MARK: - Theme Image
     static var appImage: Image {
         return Image(
-            background: UIImage(named: "img_background")!,
             ic_tabbar_home: #imageLiteral(resourceName: "ic_tabbar_home")
         )
     }

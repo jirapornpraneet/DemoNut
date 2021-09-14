@@ -12,15 +12,20 @@ import UIKit
 class RootAppController: LGSideMenuController {
     
     var mainController: UIViewController!
+    var statusbarStyle = UIStatusBarStyle.lightContent
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupStyle()
         AppDirector.sharedInstance.rootController = self
         
-        // setup controller
-        let homeController: HomeViewController = AppDirector.instantiate()
-        self.mainController = RootNavigationController(rootViewController: homeController)
+        // กรณีมี Tabbar
+        self.mainController = RootTabBarController()
+        self.enableMenu(false)
+        
+        //กรณีไม่มี Tabbar
+//        let homeController: HomeViewController = AppDirector.instantiate()
+//        self.mainController = RootNavigationController(rootViewController: homeController)
         
         self.rootViewController = mainController
         self.delegate = self
@@ -29,12 +34,41 @@ class RootAppController: LGSideMenuController {
     func setRoot() {
         // Todo somthing.
     }
+    
+    func setStatusBar(_ style: UIStatusBarStyle = .lightContent) {
+        self.statusbarStyle = style
+        self.setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return statusbarStyle
+    }
 }
 
 
 // MARK: - Interface
 
 extension RootAppController {
+    
+    /// Set tabbar
+    func setTabbar(_ tab: RootTabBarController.Tab) {
+        if let tabbar: RootTabBarController = self.mainController as? RootTabBarController {
+            tabbar.setSelected(tab)
+        }
+    }
+    
+    func setTabbar(badge: Int,in tab: RootTabBarController.Tab) {
+        if let tabbar: RootTabBarController = self.mainController as? RootTabBarController {
+            tabbar.setBadge(badge: badge, in: tab)
+        }
+    }
+
+    
+    /// Turn on or off menu
+    func enableMenu(_ isEnabled: Bool = true) {
+        self.isLeftViewEnabled = isEnabled
+        self.isRightViewEnabled = isEnabled
+    }
     
     /// Turn on or off gesture for present drawer.
     func setMenuSwipeGesture(_ isEnabled: Bool = true) {

@@ -44,7 +44,7 @@ class RootTabBarController: UITabBarController {
         
         // Initial
         self.setupTabIcon()
-        self.listController = [homeViewController, newsViewController, notiViewController, menuViewController]
+        self.listController = [homeViewController]
         self.viewControllers = listController
     }
     
@@ -55,9 +55,6 @@ class RootTabBarController: UITabBarController {
         
         // Title
         homeViewController.tabBarItem.title = "หน้าแรก"
-        newsViewController.tabBarItem.title = "ข่าวสาร"
-        notiViewController.tabBarItem.title = "แจ้งเตือน"
-        menuViewController.tabBarItem.title = "เมนู"
         
         // Font
         let font = UIFont.Theme.primary_semibold.withSize(12)
