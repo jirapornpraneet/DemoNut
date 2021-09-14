@@ -70,4 +70,13 @@ class Layout {
     struct NavigationBar {
         static let height: CGFloat = 50.0
     }
+    
+    struct Picker {
+        static let scale            : CGFloat = 0.3
+        static let max_scale        : CGFloat = 0.7
+        static let min_scale        : CGFloat = 0.4
+        static let height           : CGFloat = UIDevice.screenSize.height * Layout.Picker.scale
+        static let section_height   : CGFloat = 60
+        static let bottom_height    : CGFloat = 50
+    }
 }

@@ -15,12 +15,20 @@ class AppConfiguration {
     
     struct Image {
         let background: UIImage
+        let ic_tabbar_home: UIImage
     }
     
     struct Color {
         let primary     : UIColor
         let secondary   : UIColor
         let thirdary    : UIColor
+    }
+    
+    struct Font {
+        let primary_normal  : UIFont
+        let primary_bold    : UIFont
+        let primary_medium  : UIFont
+        let primary_semibold: UIFont
     }
 }
 
@@ -29,16 +37,27 @@ extension AppConfiguration {
     // MARK: - Theme Image
     static var appImage: Image {
         return Image(
-            background: UIImage(named: "img_background")!
+            background: UIImage(named: "img_background")!,
+            ic_tabbar_home: #imageLiteral(resourceName: "ic_tabbar_home")
         )
     }
     
     // MARK: - Theme Color
     static var appColor: Color {
         return Color(
-            primary:    UIColor("#000000"),
+            primary:    #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1),
             secondary:  UIColor("#000000"),
             thirdary:   UIColor("#000000")
+        )
+    }
+    
+    // MARK: - Theme Font
+    static var appFont: Font {
+        return Font(
+            primary_normal  : UIFont(name: "SukhumvitSet-Text",     size: 16)!,
+            primary_bold    : UIFont(name: "SukhumvitSet-Bold",     size: 16)!,
+            primary_medium  : UIFont(name: "SukhumvitSet-Medium",   size: 16)!,
+            primary_semibold: UIFont(name: "SukhumvitSet-SemiBold", size: 16)!
         )
     }
 }

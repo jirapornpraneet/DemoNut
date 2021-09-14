@@ -15,6 +15,8 @@ typealias AppImage = AppConfiguration.Image
 
 typealias AppColor = AppConfiguration.Color
 
+typealias AppFont = AppConfiguration.Font
+
 typealias SelectionItem = (id: Int, title: String, isSelected: Bool)
 
 typealias DateRange = (start: Date, end: Date)

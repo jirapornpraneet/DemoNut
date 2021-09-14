@@ -85,6 +85,14 @@
 		CD25B13726D4C43000E5699C /* RootAppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD25B0EC26D4C42F00E5699C /* RootAppController.swift */; };
 		CD25B13826D4C43000E5699C /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD25B0F126D4C42F00E5699C /* EmptyView.xib */; };
 		CD25B13926D4C43000E5699C /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD25B0F226D4C42F00E5699C /* EmptyView.swift */; };
+		CD9052BB26F0922C005673C6 /* BasePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9052BA26F0922C005673C6 /* BasePickerViewController.swift */; };
+		CD9052BD26F092E1005673C6 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9052BC26F092E1005673C6 /* RootTabBarController.swift */; };
+		CD9052C726F0949E005673C6 /* SukhumvitSet-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9052C126F0949E005673C6 /* SukhumvitSet-Light.ttf */; };
+		CD9052C826F0949E005673C6 /* SukhumvitSet-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9052C226F0949E005673C6 /* SukhumvitSet-Bold.ttf */; };
+		CD9052C926F0949E005673C6 /* SukhumvitSet-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9052C326F0949E005673C6 /* SukhumvitSet-Thin.ttf */; };
+		CD9052CA26F0949E005673C6 /* SukhumvitSet-Text.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9052C426F0949E005673C6 /* SukhumvitSet-Text.ttf */; };
+		CD9052CB26F0949E005673C6 /* SukhumvitSet-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9052C526F0949E005673C6 /* SukhumvitSet-Medium.ttf */; };
+		CD9052CC26F0949E005673C6 /* SukhumvitSet-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9052C626F0949E005673C6 /* SukhumvitSet-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +186,14 @@
 		CD25B0EC26D4C42F00E5699C /* RootAppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootAppController.swift; sourceTree = "<group>"; };
 		CD25B0F126D4C42F00E5699C /* EmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
 		CD25B0F226D4C42F00E5699C /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		CD9052BA26F0922C005673C6 /* BasePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePickerViewController.swift; sourceTree = "<group>"; };
+		CD9052BC26F092E1005673C6 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		CD9052C126F0949E005673C6 /* SukhumvitSet-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-Light.ttf"; sourceTree = "<group>"; };
+		CD9052C226F0949E005673C6 /* SukhumvitSet-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-Bold.ttf"; sourceTree = "<group>"; };
+		CD9052C326F0949E005673C6 /* SukhumvitSet-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-Thin.ttf"; sourceTree = "<group>"; };
+		CD9052C426F0949E005673C6 /* SukhumvitSet-Text.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-Text.ttf"; sourceTree = "<group>"; };
+		CD9052C526F0949E005673C6 /* SukhumvitSet-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-Medium.ttf"; sourceTree = "<group>"; };
+		CD9052C626F0949E005673C6 /* SukhumvitSet-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +277,7 @@
 		CD25B08D26D4C42F00E5699C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				CD9052BE26F0947A005673C6 /* File */,
 				CD25B08E26D4C42F00E5699C /* Core */,
 				CD25B0A526D4C42F00E5699C /* Extension */,
 				CD25B0B926D4C42F00E5699C /* Localized */,
@@ -539,6 +556,7 @@
 				CD25B0EB26D4C42F00E5699C /* BaseCollectionViewCell.swift */,
 				CD25B0EA26D4C42F00E5699C /* BaseTableViewCell.swift */,
 				CD25B0E926D4C42F00E5699C /* BaseViewController.swift */,
+				CD9052BA26F0922C005673C6 /* BasePickerViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -548,8 +566,38 @@
 			children = (
 				CD25B0E826D4C42F00E5699C /* RootNavigationController.swift */,
 				CD25B0EC26D4C42F00E5699C /* RootAppController.swift */,
+				CD9052BC26F092E1005673C6 /* RootTabBarController.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		CD9052BE26F0947A005673C6 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				CD9052BF26F09486005673C6 /* Font */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		CD9052BF26F09486005673C6 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CD9052C026F0949E005673C6 /* Sukhumvit */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		CD9052C026F0949E005673C6 /* Sukhumvit */ = {
+			isa = PBXGroup;
+			children = (
+				CD9052C126F0949E005673C6 /* SukhumvitSet-Light.ttf */,
+				CD9052C226F0949E005673C6 /* SukhumvitSet-Bold.ttf */,
+				CD9052C326F0949E005673C6 /* SukhumvitSet-Thin.ttf */,
+				CD9052C426F0949E005673C6 /* SukhumvitSet-Text.ttf */,
+				CD9052C526F0949E005673C6 /* SukhumvitSet-Medium.ttf */,
+				CD9052C626F0949E005673C6 /* SukhumvitSet-SemiBold.ttf */,
+			);
+			path = Sukhumvit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -614,9 +662,15 @@
 				CD25B13226D4C43000E5699C /* Root.storyboard in Resources */,
 				CD25B07426D4BBFB00E5699C /* LaunchScreen.storyboard in Resources */,
 				CD25B07126D4BBFB00E5699C /* Assets.xcassets in Resources */,
+				CD9052CB26F0949E005673C6 /* SukhumvitSet-Medium.ttf in Resources */,
+				CD9052C826F0949E005673C6 /* SukhumvitSet-Bold.ttf in Resources */,
+				CD9052C926F0949E005673C6 /* SukhumvitSet-Thin.ttf in Resources */,
 				CD25B06F26D4BBF900E5699C /* Main.storyboard in Resources */,
 				CD25B13826D4C43000E5699C /* EmptyView.xib in Resources */,
+				CD9052CA26F0949E005673C6 /* SukhumvitSet-Text.ttf in Resources */,
+				CD9052CC26F0949E005673C6 /* SukhumvitSet-SemiBold.ttf in Resources */,
 				CD25B13126D4C43000E5699C /* Home.storyboard in Resources */,
+				CD9052C726F0949E005673C6 /* SukhumvitSet-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,6 +733,7 @@
 				CD25B10626D4C43000E5699C /* UIFont+Extension.swift in Sources */,
 				CD25B11926D4C43000E5699C /* UIColorInputError.swift in Sources */,
 				CD25B11426D4C43000E5699C /* Device.swift in Sources */,
+				CD9052BD26F092E1005673C6 /* RootTabBarController.swift in Sources */,
 				CD25B12326D4C43000E5699C /* Define.swift in Sources */,
 				CD25B10E26D4C43000E5699C /* Double+Extension.swift in Sources */,
 				CD25B13526D4C43000E5699C /* BaseTableViewCell.swift in Sources */,
@@ -702,6 +757,7 @@
 				CD25B13626D4C43000E5699C /* BaseCollectionViewCell.swift in Sources */,
 				CD25B06A26D4BBF900E5699C /* SceneDelegate.swift in Sources */,
 				CD25B11526D4C43000E5699C /* UITextField+Extension.swift in Sources */,
+				CD9052BB26F0922C005673C6 /* BasePickerViewController.swift in Sources */,
 				CD25B12726D4C43000E5699C /* AppConfiguration.swift in Sources */,
 				CD25B10226D4C43000E5699C /* Authentication.swift in Sources */,
 				CD25B12126D4C43000E5699C /* LGSideMenuBorderView.m in Sources */,

@@ -12,6 +12,9 @@ import UIKit
 
 extension UIFont { //++
     
+    /// Font of project.
+    static var Theme: AppFont = AppConfiguration.appFont
+    
     /// Initial new font.
     convenience init(fontName: String, size: CGFloat) {
         self.init(name: fontName, size: size)!
