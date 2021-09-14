@@ -494,11 +494,8 @@
 		CD25B0E726D4C42F00E5699C /* Base & Root */ = {
 			isa = PBXGroup;
 			children = (
-				CD25B0E826D4C42F00E5699C /* RootNavigationController.swift */,
-				CD25B0E926D4C42F00E5699C /* BaseViewController.swift */,
-				CD25B0EA26D4C42F00E5699C /* BaseTableViewCell.swift */,
-				CD25B0EB26D4C42F00E5699C /* BaseCollectionViewCell.swift */,
-				CD25B0EC26D4C42F00E5699C /* RootAppController.swift */,
+				CD9052B926F09065005673C6 /* Root */,
+				CD9052B826F0905D005673C6 /* Base */,
 			);
 			path = "Base & Root";
 			sourceTree = "<group>";
@@ -534,6 +531,25 @@
 				CD25B0F226D4C42F00E5699C /* EmptyView.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		CD9052B826F0905D005673C6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CD25B0EB26D4C42F00E5699C /* BaseCollectionViewCell.swift */,
+				CD25B0EA26D4C42F00E5699C /* BaseTableViewCell.swift */,
+				CD25B0E926D4C42F00E5699C /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CD9052B926F09065005673C6 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				CD25B0E826D4C42F00E5699C /* RootNavigationController.swift */,
+				CD25B0EC26D4C42F00E5699C /* RootAppController.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
