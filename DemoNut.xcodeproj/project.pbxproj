@@ -231,12 +231,12 @@
 			isa = PBXGroup;
 			children = (
 				CD25B0D626D4C42F00E5699C /* Application */,
-				CD25B0E726D4C42F00E5699C /* Base & Root */,
 				CD25B08A26D4C42F00E5699C /* Model */,
 				CD25B08D26D4C42F00E5699C /* Resource */,
 				CD25B0DB26D4C42F00E5699C /* Scene */,
-				CD25B0E426D4C42F00E5699C /* Storyboard */,
 				CD25B0ED26D4C42F00E5699C /* View */,
+				CD25B0E426D4C42F00E5699C /* Storyboard */,
+				CD25B0E726D4C42F00E5699C /* Base & Root */,
 				CD25B06726D4BBF900E5699C /* AppDelegate.swift */,
 				CD25B06926D4BBF900E5699C /* SceneDelegate.swift */,
 				CD25B06B26D4BBF900E5699C /* ViewController.swift */,
