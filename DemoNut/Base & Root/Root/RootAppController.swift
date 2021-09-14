@@ -20,12 +20,12 @@ class RootAppController: LGSideMenuController {
         AppDirector.sharedInstance.rootController = self
         
         // กรณีมี Tabbar
-        self.mainController = RootTabBarController()
-        self.enableMenu(false)
+//        self.mainController = RootTabBarController()
+//        self.enableMenu(false)
         
         //กรณีไม่มี Tabbar
-//        let homeController: HomeViewController = AppDirector.instantiate()
-//        self.mainController = RootNavigationController(rootViewController: homeController)
+        let homeController: HomeViewController = AppDirector.instantiate()
+        self.mainController = RootNavigationController(rootViewController: homeController)
         
         self.rootViewController = mainController
         self.delegate = self
