@@ -45,7 +45,7 @@ extension AppConfiguration {
     // MARK: - Theme Color
     static var appColor: Color {
         return Color(
-            primary:    #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1),
+            primary:    #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1),
             secondary:  UIColor("#000000"),
             thirdary:   UIColor("#000000")
         )
