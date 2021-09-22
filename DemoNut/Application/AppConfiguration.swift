@@ -15,6 +15,7 @@ class AppConfiguration {
     
     struct Image {
         let ic_tabbar_home: UIImage
+        let ic_tabbar_menu  : UIImage
     }
     
     struct Color {
@@ -36,7 +37,8 @@ extension AppConfiguration {
     // MARK: - Theme Image
     static var appImage: Image {
         return Image(
-            ic_tabbar_home: #imageLiteral(resourceName: "ic_tabbar_home")
+            ic_tabbar_home: #imageLiteral(resourceName: "ic_tabbar_home"),
+            ic_tabbar_menu: #imageLiteral(resourceName: "ic_tabbar_menu")
         )
     }
     
