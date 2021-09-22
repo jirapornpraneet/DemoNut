@@ -15,8 +15,6 @@ class RootTabBarController: UITabBarController {
 
     // Controllers
     private var homeViewController: UIViewController!
-    private var newsViewController: UIViewController!
-    private var notiViewController: UIViewController!
     private var menuViewController: UIViewController!
     
     /// List of controller
@@ -42,9 +40,12 @@ class RootTabBarController: UITabBarController {
         let homeVC: HomeViewController = AppDirector.instantiate()
         homeViewController = RootNavigationController.init(rootViewController: homeVC)
         
+        let menuVC: MenuViewController = AppDirector.instantiate()
+        menuViewController = RootNavigationController.init(rootViewController: menuVC)
+        
         // Initial
         self.setupTabIcon()
-        self.listController = [homeViewController]
+        self.listController = [homeViewController,menuViewController]
         self.viewControllers = listController
     }
     
@@ -55,15 +56,17 @@ class RootTabBarController: UITabBarController {
         
         // Title
         homeViewController.tabBarItem.title = "หน้าแรก"
+        menuViewController.tabBarItem.title = "เมนู"
         
         // Font
         let font = UIFont.Theme.primary_semibold.withSize(12)
         UITabBar.appearance().tintColor = UIColor.Theme.primary
         homeViewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
+        menuViewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
         
         // Set icon tabbar
         homeViewController.tabBarItem.image = UIImage.Theme.ic_tabbar_home
-        
+        menuViewController.tabBarItem.image = UIImage.Theme.ic_tabbar_menu
         
         // homeViewController.tabBarItem.selectedImage = ...
     }
