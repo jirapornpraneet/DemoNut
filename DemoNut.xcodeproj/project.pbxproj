@@ -98,6 +98,8 @@
 		CD9052CA26F0949E005673C6 /* SukhumvitSet-Text.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9052C426F0949E005673C6 /* SukhumvitSet-Text.ttf */; };
 		CD9052CB26F0949E005673C6 /* SukhumvitSet-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9052C526F0949E005673C6 /* SukhumvitSet-Medium.ttf */; };
 		CD9052CC26F0949E005673C6 /* SukhumvitSet-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9052C626F0949E005673C6 /* SukhumvitSet-SemiBold.ttf */; };
+		CD91352826FB1BAF00B71F4F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91352726FB1BAF00B71F4F /* MenuTableViewCell.swift */; };
+		CD91352A26FB1BBA00B71F4F /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD91352926FB1BBA00B71F4F /* MenuTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,6 +206,8 @@
 		CD9052C426F0949E005673C6 /* SukhumvitSet-Text.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-Text.ttf"; sourceTree = "<group>"; };
 		CD9052C526F0949E005673C6 /* SukhumvitSet-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-Medium.ttf"; sourceTree = "<group>"; };
 		CD9052C626F0949E005673C6 /* SukhumvitSet-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-SemiBold.ttf"; sourceTree = "<group>"; };
+		CD91352726FB1BAF00B71F4F /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		CD91352926FB1BBA00B71F4F /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -550,6 +554,7 @@
 		CD25B0EF26D4C42F00E5699C /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				CD91352626FB1B9200B71F4F /* Menu */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -623,6 +628,15 @@
 			path = Sukhumvit;
 			sourceTree = "<group>";
 		};
+		CD91352626FB1B9200B71F4F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CD91352726FB1BAF00B71F4F /* MenuTableViewCell.swift */,
+				CD91352926FB1BBA00B71F4F /* MenuTableViewCell.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -690,6 +704,7 @@
 				CD9052C826F0949E005673C6 /* SukhumvitSet-Bold.ttf in Resources */,
 				CD9052C926F0949E005673C6 /* SukhumvitSet-Thin.ttf in Resources */,
 				CD25B06F26D4BBF900E5699C /* Main.storyboard in Resources */,
+				CD91352A26FB1BBA00B71F4F /* MenuTableViewCell.xib in Resources */,
 				CD25B13826D4C43000E5699C /* EmptyView.xib in Resources */,
 				CD9052CA26F0949E005673C6 /* SukhumvitSet-Text.ttf in Resources */,
 				CD9052CC26F0949E005673C6 /* SukhumvitSet-SemiBold.ttf in Resources */,
@@ -821,6 +836,7 @@
 				CD25B12626D4C43000E5699C /* ReuseIdentifying.swift in Sources */,
 				CD25B0F526D4C42F00E5699C /* Service.swift in Sources */,
 				CD25B0FE26D4C43000E5699C /* SchemeData.swift in Sources */,
+				CD91352826FB1BAF00B71F4F /* MenuTableViewCell.swift in Sources */,
 				CD25B11226D4C43000E5699C /* UIStoryboard+Extension.swift in Sources */,
 				CD25B11B26D4C43000E5699C /* LGSideMenuHelper.m in Sources */,
 				CD25B11626D4C43000E5699C /* UITableView+Extension.swift in Sources */,
