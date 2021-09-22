@@ -85,6 +85,10 @@
 		CD25B13726D4C43000E5699C /* RootAppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD25B0EC26D4C42F00E5699C /* RootAppController.swift */; };
 		CD25B13826D4C43000E5699C /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD25B0F126D4C42F00E5699C /* EmptyView.xib */; };
 		CD25B13926D4C43000E5699C /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD25B0F226D4C42F00E5699C /* EmptyView.swift */; };
+		CD33E9CA26FADBCE002A4AEC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E9C726FADBCE002A4AEC /* MenuViewController.swift */; };
+		CD33E9CB26FADBCE002A4AEC /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E9C826FADBCE002A4AEC /* MenuViewModel.swift */; };
+		CD33E9CC26FADBCE002A4AEC /* MenuViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E9C926FADBCE002A4AEC /* MenuViewController+View.swift */; };
+		CD33E9CE26FADC40002A4AEC /* MenuInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E9CD26FADC40002A4AEC /* MenuInfo.swift */; };
 		CD9052BB26F0922C005673C6 /* BasePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9052BA26F0922C005673C6 /* BasePickerViewController.swift */; };
 		CD9052BD26F092E1005673C6 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9052BC26F092E1005673C6 /* RootTabBarController.swift */; };
 		CD9052C726F0949E005673C6 /* SukhumvitSet-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9052C126F0949E005673C6 /* SukhumvitSet-Light.ttf */; };
@@ -186,6 +190,10 @@
 		CD25B0EC26D4C42F00E5699C /* RootAppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootAppController.swift; sourceTree = "<group>"; };
 		CD25B0F126D4C42F00E5699C /* EmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
 		CD25B0F226D4C42F00E5699C /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		CD33E9C726FADBCE002A4AEC /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CD33E9C826FADBCE002A4AEC /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		CD33E9C926FADBCE002A4AEC /* MenuViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+View.swift"; sourceTree = "<group>"; };
+		CD33E9CD26FADC40002A4AEC /* MenuInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInfo.swift; sourceTree = "<group>"; };
 		CD9052BA26F0922C005673C6 /* BasePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePickerViewController.swift; sourceTree = "<group>"; };
 		CD9052BC26F092E1005673C6 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		CD9052C126F0949E005673C6 /* SukhumvitSet-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-Light.ttf"; sourceTree = "<group>"; };
@@ -270,6 +278,7 @@
 			children = (
 				CD25B08B26D4C42F00E5699C /* UserInfo.swift */,
 				CD25B08C26D4C42F00E5699C /* BaseInfo.swift */,
+				CD33E9CD26FADC40002A4AEC /* MenuInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -473,6 +482,7 @@
 		CD25B0DB26D4C42F00E5699C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				CD33E9C626FADB68002A4AEC /* Menu */,
 				CD25B0DC26D4C42F00E5699C /* Home */,
 				CD25B0E026D4C42F00E5699C /* Drawer */,
 			);
@@ -548,6 +558,16 @@
 				CD25B0F226D4C42F00E5699C /* EmptyView.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		CD33E9C626FADB68002A4AEC /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CD33E9C726FADBCE002A4AEC /* MenuViewController.swift */,
+				CD33E9C826FADBCE002A4AEC /* MenuViewModel.swift */,
+				CD33E9C926FADBCE002A4AEC /* MenuViewController+View.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		CD9052B826F0905D005673C6 /* Base */ = {
@@ -726,6 +746,7 @@
 				CD25B0FF26D4C43000E5699C /* URLProcessor.swift in Sources */,
 				CD25B0F626D4C42F00E5699C /* DataStore.swift in Sources */,
 				CD25B0F326D4C42F00E5699C /* UserInfo.swift in Sources */,
+				CD33E9CB26FADBCE002A4AEC /* MenuViewModel.swift in Sources */,
 				CD25B11F26D4C43000E5699C /* LGSideMenuGesturesHandler.m in Sources */,
 				CD25B06C26D4BBF900E5699C /* ViewController.swift in Sources */,
 				CD25B11326D4C43000E5699C /* Size.swift in Sources */,
@@ -765,6 +786,7 @@
 				CD25B12F26D4C43000E5699C /* DrawerViewModel.swift in Sources */,
 				CD25B11726D4C43000E5699C /* Localizable.swift in Sources */,
 				CD25B12D26D4C43000E5699C /* HomeViewController.swift in Sources */,
+				CD33E9CE26FADC40002A4AEC /* MenuInfo.swift in Sources */,
 				CD25B10326D4C43000E5699C /* TokenDecoder.swift in Sources */,
 				CD25B10926D4C43000E5699C /* Date+Extension.swift in Sources */,
 				CD25B11E26D4C43000E5699C /* LGSideMenuController.m in Sources */,
@@ -776,6 +798,7 @@
 				CD25B11D26D4C43000E5699C /* LGSideMenuSegue.m in Sources */,
 				CD25B10426D4C43000E5699C /* Token.swift in Sources */,
 				CD25B12926D4C43000E5699C /* AppDirector.swift in Sources */,
+				CD33E9CC26FADBCE002A4AEC /* MenuViewController+View.swift in Sources */,
 				CD25B13326D4C43000E5699C /* RootNavigationController.swift in Sources */,
 				CD25B12B26D4C43000E5699C /* HomeViewModel.swift in Sources */,
 				CD25B13026D4C43000E5699C /* DrawerViewController+View.swift in Sources */,
@@ -786,6 +809,7 @@
 				CD25B10B26D4C43000E5699C /* UIView+Extension.swift in Sources */,
 				CD25B0F426D4C42F00E5699C /* BaseInfo.swift in Sources */,
 				CD25B12826D4C43000E5699C /* AppLayout.swift in Sources */,
+				CD33E9CA26FADBCE002A4AEC /* MenuViewController.swift in Sources */,
 				CD25B12026D4C43000E5699C /* UIViewController+LGSideMenuController.m in Sources */,
 				CD25B10526D4C43000E5699C /* UIImageView+Extension.swift in Sources */,
 				CD25B12426D4C43000E5699C /* Running.swift in Sources */,
