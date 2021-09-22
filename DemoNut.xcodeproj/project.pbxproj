@@ -264,9 +264,7 @@
 				CD25B06726D4BBF900E5699C /* AppDelegate.swift */,
 				CD25B06926D4BBF900E5699C /* SceneDelegate.swift */,
 				CD25B06B26D4BBF900E5699C /* ViewController.swift */,
-				CD25B06D26D4BBF900E5699C /* Main.storyboard */,
 				CD25B07026D4BBFB00E5699C /* Assets.xcassets */,
-				CD25B07226D4BBFB00E5699C /* LaunchScreen.storyboard */,
 				CD25B07526D4BBFB00E5699C /* Info.plist */,
 				CD25B07C26D4C34F00E5699C /* DemoNut-Bridging-Header.h */,
 			);
@@ -514,6 +512,8 @@
 			children = (
 				CD25B0E526D4C42F00E5699C /* Home.storyboard */,
 				CD25B0E626D4C42F00E5699C /* Root.storyboard */,
+				CD25B06D26D4BBF900E5699C /* Main.storyboard */,
+				CD25B07226D4BBFB00E5699C /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
