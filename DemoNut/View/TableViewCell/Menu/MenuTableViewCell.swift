@@ -36,8 +36,11 @@ class MenuTableViewCell: BaseTableViewCell {
     }
     
     func updateInterface() {
-        
+        if let value = self.item {
+            lblTitle.text = value.title
+            iconImageView.image = value.image
+            
+            badgeView.isHidden = true
+        }
     }
- 
-   
 }
