@@ -26,8 +26,6 @@ class MenuViewController : BaseViewController {
 extension MenuViewController {
     
     func fetchData() {
-        viewModel.requestData {
-            // On fetch success
-        }
+    
     }
 }

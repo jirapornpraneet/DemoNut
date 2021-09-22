@@ -89,6 +89,7 @@
 		CD33E9CB26FADBCE002A4AEC /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E9C826FADBCE002A4AEC /* MenuViewModel.swift */; };
 		CD33E9CC26FADBCE002A4AEC /* MenuViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E9C926FADBCE002A4AEC /* MenuViewController+View.swift */; };
 		CD33E9CE26FADC40002A4AEC /* MenuInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33E9CD26FADC40002A4AEC /* MenuInfo.swift */; };
+		CD33E9D026FADD59002A4AEC /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD33E9CF26FADD59002A4AEC /* Menu.storyboard */; };
 		CD9052BB26F0922C005673C6 /* BasePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9052BA26F0922C005673C6 /* BasePickerViewController.swift */; };
 		CD9052BD26F092E1005673C6 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9052BC26F092E1005673C6 /* RootTabBarController.swift */; };
 		CD9052C726F0949E005673C6 /* SukhumvitSet-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9052C126F0949E005673C6 /* SukhumvitSet-Light.ttf */; };
@@ -194,6 +195,7 @@
 		CD33E9C826FADBCE002A4AEC /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		CD33E9C926FADBCE002A4AEC /* MenuViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+View.swift"; sourceTree = "<group>"; };
 		CD33E9CD26FADC40002A4AEC /* MenuInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInfo.swift; sourceTree = "<group>"; };
+		CD33E9CF26FADD59002A4AEC /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		CD9052BA26F0922C005673C6 /* BasePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePickerViewController.swift; sourceTree = "<group>"; };
 		CD9052BC26F092E1005673C6 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		CD9052C126F0949E005673C6 /* SukhumvitSet-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-Light.ttf"; sourceTree = "<group>"; };
@@ -514,6 +516,7 @@
 				CD25B0E626D4C42F00E5699C /* Root.storyboard */,
 				CD25B06D26D4BBF900E5699C /* Main.storyboard */,
 				CD25B07226D4BBFB00E5699C /* LaunchScreen.storyboard */,
+				CD33E9CF26FADD59002A4AEC /* Menu.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -681,6 +684,7 @@
 			files = (
 				CD25B13226D4C43000E5699C /* Root.storyboard in Resources */,
 				CD25B07426D4BBFB00E5699C /* LaunchScreen.storyboard in Resources */,
+				CD33E9D026FADD59002A4AEC /* Menu.storyboard in Resources */,
 				CD25B07126D4BBFB00E5699C /* Assets.xcassets in Resources */,
 				CD9052CB26F0949E005673C6 /* SukhumvitSet-Medium.ttf in Resources */,
 				CD9052C826F0949E005673C6 /* SukhumvitSet-Bold.ttf in Resources */,
