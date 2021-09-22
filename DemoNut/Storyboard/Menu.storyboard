@@ -47,6 +47,10 @@
                             <constraint firstItem="8rw-1F-3sp" firstAttribute="trailing" secondItem="Xtf-aN-DLu" secondAttribute="trailing" id="nzb-CO-2fO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerTableView" destination="ZH4-rp-D8p" id="kgW-PL-NEv"/>
+                        <outlet property="tableView" destination="U16-Mp-rq8" id="cpk-Mb-URD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

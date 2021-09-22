@@ -12,18 +12,22 @@ import UIKit
 extension MenuViewController {
     
     func setupView() {
-        //Setup all interface
+        self.view.backgroundColor = UIColor.Theme.primary
+        self.navigationViewHeight?.constant = Layout.StatusBar.height
+        setupTableView()
     }
     
     func setupTableView() {
-        //Setup tableview
-    }
-    
-    func setupTextField() {
-        //Setup textfield
-    }
-    
-    func setupButton() {
-        //Setup button
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.tableFooterView = UIView(frame: .zero)
+        tableView.alwaysBounceVertical = false
+        
+        headerTableView.frame.size.height = 100
+        tableView.tableHeaderView = headerTableView
+        
+        /// Register
+        let nibCell = UINib(nibName: "MenuTableViewCell", bundle: Bundle(for: MenuTableViewCell.self))
+        self.tableView.register(nibCell, forCellReuseIdentifier: "MenuTableViewCell")
     }
 }
