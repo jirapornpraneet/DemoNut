@@ -16,6 +16,7 @@ extension UIStoryboard {
         case Root
         case Main
         case Home
+        case Menu
         //case SplashScreen
         
         var filename: String {
